@@ -51,7 +51,7 @@ def build(dir: str, output: str, no_zip: bool, no_directory: bool, flag=""):
     problem.flag = problem.flag or flag or find_flag(dir)
     config = Config(**config["basic"], problem=problem)
     gen_directory = join(output, config.generated_name)
-    gen_zip = join(output, config.generated_name+".zip")
+    gen_zip = join(output, config.generated_name)
     if os.path.exists(gen_directory):
         if click.confirm(f"Output directory {gen_directory} exist, remove?", default=True):
             shutil.rmtree(gen_directory)

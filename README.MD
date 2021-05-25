@@ -21,11 +21,7 @@ pip install -r requirements.txt
 
 ## 用法
 
-安装依赖，或者使用
-
-```sh
-docker run yoshinos/afa --help
-```
+安装依赖
 
 初始化一个题目
 ```sh
