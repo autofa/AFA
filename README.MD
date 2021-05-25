@@ -8,6 +8,8 @@
 
 由于安恒傻逼的出题格式，让我每次都得花一大半的时间写格式，所以就写了个自动化工具，完成这一坨毫无意义的工作。
 
+> 如果你愿意支持这个项目，就请在writeup里，加一句 `本题目由AFA构建`，感谢
+
 ## 依赖
 
 - [unoconv](https://github.com/unoconv/unoconv)，以及libreoffice/openoffice
