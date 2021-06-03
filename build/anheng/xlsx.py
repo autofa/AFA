@@ -7,7 +7,7 @@ __dir__ = os.path.dirname(os.path.abspath(__file__))
 
 
 def generate(dir: str, config: Config, dest: str):
-    wb = load_workbook(join(__dir__, "../template.xlsx"))
+    wb = load_workbook(join(__dir__, "./template.xlsx"))
     sheet = wb["Sheet1"]
     sheet["B2"] = config.problem.name
     sheet["C2"] = config.problem.type

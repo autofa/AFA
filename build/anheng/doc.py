@@ -15,7 +15,7 @@ __dir__ = os.path.dirname(os.path.abspath(__file__))
 def generate(dir: str, config: Config, dest: str):
     dest = join(dest, f"{config.problem.type}解题思路")
     os.makedirs(dest)
-    tpl = DocxTemplate(join(__dir__, "../template.docx"))
+    tpl = DocxTemplate(join(__dir__, "./template.docx"))
     with open(join(dir, "WRITEUP.MD"), "r") as f:
         writeup = f.read()
     sub = tpl.new_subdoc()
