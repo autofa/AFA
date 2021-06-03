@@ -39,3 +39,5 @@
 ### [题目writeup]：
 
 {{writeup}}
+
+> This problem is powered by AFA

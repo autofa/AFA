@@ -18,6 +18,7 @@ def generate(dir: str, config: Config, dest: str):
     tpl = DocxTemplate(join(__dir__, "./template.docx"))
     with open(join(dir, "WRITEUP.MD"), "r") as f:
         writeup = f.read()
+    writeup += '\n\n\n\n> This problem is powered by AFA'
     sub = tpl.new_subdoc()
     render(sub.subdocx, writeup)
     tpl.render({
