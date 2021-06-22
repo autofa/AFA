@@ -45,6 +45,9 @@ class PythonDocxRenderer(mistune.Renderer):
         super(PythonDocxRenderer, self).__init__(**kwds)
         self.table_memory = []
         self.img_counter = 0
+    
+    def block_quote(self, text):
+        return f"p.add_run('> '+{json.dumps(text)})\n"
 
     def header(self, text, level, raw):
         return "p = document.add_heading('', %d)\n" % (level - 1) + text
